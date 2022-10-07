@@ -4,13 +4,13 @@ let notificationBottom = document.querySelector('.notificationBottom')
 let readAllBtn = document.querySelector('.readAllBtn')
 unreadAmount.innerHTML = 0
 let notifyMessage = [
-    {profileImgSrc: 'assets/images/avatar-mark-webber.webp', name: 'Mark Webber', type: 'reacted', post: 'reacted to your post', postReactedTo: 'My first tournament!', time: '1m ago', read: false},
-    {profileImgSrc: 'assets/images/avatar-angela-gray.webp', name: 'Angela Gray', type: 'follow', post: 'followed you', time: '5m ago', read: false},
-    {profileImgSrc: 'assets/images/avatar-jacob-thompson.webp', name: 'Jacob Thompson', type: 'inform', post: 'has joined your group', postReactedTo: 'Chess Club', time: '1 day ago', read: false},
-    {profileImgSrc: 'assets/images/avatar-rizky-hasanuddin.webp', name: 'Rizky Hasanuddin', type: 'private', post: 'sent you a private message', time: '5 days ago', message: `Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.`, read: true},
-    {profileImgSrc: 'assets/images/avatar-kimberly-smith.webp', name: 'Kimberly Smith', type: 'comment', post: 'commented on your picture', time: '1 week ago', pictureSrc: '/assets/images/image-chess.webp', read: true},
-    {profileImgSrc: 'assets/images/avatar-nathan-peterson.webp', name: 'Nathan Peterson', type: 'reacted', post: 'reacted to your recent post', postReactedTo: '5 end-game strategies to increase your win rate', time: '2 weeks ago', read: true},
-    {profileImgSrc: 'assets/images/avatar-anna-kim.webp', name: 'Anna Kim', type: 'inform', post: 'left the group', postReactedTo: 'Chess Club', time: '1 day ago', read: true}
+    {profileImgSrc: './assets/images/avatar-mark-webber.webp', name: 'Mark Webber', type: 'reacted', post: 'reacted to your post', postReactedTo: 'My first tournament!', time: '1m ago', read: false},
+    {profileImgSrc: './assets/images/avatar-angela-gray.webp', name: 'Angela Gray', type: 'follow', post: 'followed you', time: '5m ago', read: false},
+    {profileImgSrc: './assets/images/avatar-jacob-thompson.webp', name: 'Jacob Thompson', type: 'inform', post: 'has joined your group', postReactedTo: 'Chess Club', time: '1 day ago', read: false},
+    {profileImgSrc: './assets/images/avatar-rizky-hasanuddin.webp', name: 'Rizky Hasanuddin', type: 'private', post: 'sent you a private message', time: '5 days ago', message: `Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and I'm already having lots of fun and improving my game.`, read: true},
+    {profileImgSrc: './assets/images/avatar-kimberly-smith.webp', name: 'Kimberly Smith', type: 'comment', post: 'commented on your picture', time: '1 week ago', pictureSrc: '/assets/images/image-chess.webp', read: true},
+    {profileImgSrc: './assets/images/avatar-nathan-peterson.webp', name: 'Nathan Peterson', type: 'reacted', post: 'reacted to your recent post', postReactedTo: '5 end-game strategies to increase your win rate', time: '2 weeks ago', read: true},
+    {profileImgSrc: './assets/images/avatar-anna-kim.webp', name: 'Anna Kim', type: 'inform', post: 'left the group', postReactedTo: 'Chess Club', time: '1 day ago', read: true}
 ]
 readAllBtn.addEventListener('click', ()=>{
   let message = document.querySelectorAll('.notificationMessages')
