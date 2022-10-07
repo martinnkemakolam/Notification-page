@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: hsl(210, 60%, 98%);
+    font-family: Plus Jakarta Sans;
+    font-weight: 500;
+    color: hsl(219, 14%, 63%);
+    user-select: none;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.notificationBody{
+    display: grid;
+    width: 800px;
+    padding: 10px 15px;
+    justify-content: center;
+    margin: 70px auto;
+    background-color: white;
+    border-radius: 20px;
+}
+.bodyTop{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0px;
+}
+.bodyTop .noyificationAmount{
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    align-items: center;
+    color: hsl(219, 12%, 42%);
+}
+.bodyTop .unreadAmount{
+    border-radius: 5px;
+    padding: 2px 12px;
+    background-color: hsl(219, 85%, 26%);
+    color: white;
+}
+.bodyTop .readAllBtn{
+    color: hsl(219, 12%, 42%);
+}
+.readAllBtn:hover{
+    color: hsl(219, 14%, 63%);
+}
+.notificationBottom{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    padding: 20px 0;
+}
+.notificationMessages{
+    width: 100%;   
+    margin: 10px 0;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 20px 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.notificationMessages.active{
+    background-color: hsl(205, 33%, 90%);
+}
+.notificationMessages img{
+    height: 40px;
+    aspect-ratio: 1/1;
+}
+.notificationMessages .msg{
+    display: grid;
+}
+.private{
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+.privateMsg{
+    margin-left: 60px;
+    border: 1px solid hsl(211, 68%, 94%);
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.privateMsg:hover{
+    background-color: hsl(205, 33%, 90%);
+}
+.notificationMessages .notificationMsg{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.notificationMsg .name{
+    font-weight: 800;
+    color: hsl(219, 12%, 42%);
+}
+.notificationMsg .extraDetail{
+    color: hsl(224, 46%, 33%);
+}
+.extraDetail:hover{
+    color: hsl(224, 21%, 14%);
+}
+.notificationMsg .timeAgo{
+    color: hsl(219, 12%, 42%);
+}
+.notificationMessages .comment{
+    margin-left: auto;
+}
+.comment:hover{
+    border: 1px solid hsl(219, 14%, 63%);
+    padding: 3px;
+    border-radius: 3px;
+}
+@media (max-width: 900px) {
+    .notificationBody{
+        width: auto;
+    }
+}
+@media (max-width: 400px) {
+    .notificationBody{
+        width: auto;
+    }
+}
